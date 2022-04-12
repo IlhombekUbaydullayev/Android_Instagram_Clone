@@ -81,7 +81,7 @@ class SearchFragment : BaseFragment() {
         items.add(User("Murodjon","Murod444@gmail.com"))
         items.add(User("Said","said344@gmail.com"))
         items.add(User("begzod","begzod555@gmail.com"))
-        items.add(User("begzod564","begzod666@gmail.com"))
+        items.add(User("begzod564","begzod666m@gmail.com"))
 
         return items
     }
