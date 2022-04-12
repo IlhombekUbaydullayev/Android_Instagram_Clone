@@ -22,8 +22,10 @@ class SignInActivity : AppCompatActivity() {
     private fun initViews() {
         et_email = findViewById(R.id.et_email)
         et_password = findViewById(R.id.et_password)
+
         val b_signin = findViewById<Button>(R.id.btn_signIn)
         b_signin.setOnClickListener { callMainActivity() }
+
         val tv_signup = findViewById<TextView>(R.id.tv_signup)
         tv_signup.setOnClickListener { callSignUpActivity() }
     }
@@ -37,5 +39,6 @@ class SignInActivity : AppCompatActivity() {
     private fun callSignUpActivity() {
         val intent = Intent(this,SignUpActivity::class.java)
         startActivity(intent)
+        finish()
     }
 }

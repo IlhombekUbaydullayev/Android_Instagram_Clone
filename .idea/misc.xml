@@ -14,11 +14,14 @@
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/activity_sign_up.xml" value="0.17552083333333332" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/activity_splash.xml" value="0.14666666666666667" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/fragment_favorite.xml" value="0.17552083333333332" />
-        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/fragment_home.xml" value="0.12" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/fragment_profile.xml" value="0.17552083333333332" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/fragment_search.xml" value="0.17552083333333332" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/fragment_upload.xml" value="0.16666666666666666" />
-        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/menu/navigation.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/item_post_favorite.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/item_post_home.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/item_post_model.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/menu/navigation.xml" value="0.16666666666666666" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19166666666666668" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19166666666666668" />
       </map>

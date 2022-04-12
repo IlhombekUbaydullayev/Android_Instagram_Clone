@@ -13,9 +13,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
  * and pages can be controlled by BottomNavigationView
  * **/
 
-class MainActivity : BaseActivity() {
+class MainActivity : BaseActivity(), UploadFragment.UploadListener,HomeFragment.HomeListener {
+
     val TAG = MainActivity::class.java.simpleName
-    var index = 0
+    var index = 8
     lateinit var homeFragment: HomeFragment
     lateinit var uploadFragment: UploadFragment
     lateinit var viewPager: ViewPager
@@ -25,6 +26,22 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initViews()
+
+    }
+
+    override fun scrollToUpload() {
+        index = 2
+        scrollByIndex(index)
+    }
+
+    override fun scrollToHome() {
+        index = 0
+        scrollByIndex(index)
+    }
+
+    private fun scrollByIndex(index: Int) {
+        viewPager.currentItem = index
+        bottomNavigationView.menu.getItem(index).isChecked = true
     }
 
     private fun initViews() {
@@ -32,12 +49,12 @@ class MainActivity : BaseActivity() {
         bottomNavigationView = findViewById(R.id.bottomNavigationView)
 
         bottomNavigationView.setOnItemSelectedListener { item ->
-            when(item.itemId) {
-                R.id.navigation_home -> viewPager.setCurrentItem(0)
-                R.id.navigation_search -> viewPager.setCurrentItem(1)
-                R.id.navigation_upload -> viewPager.setCurrentItem(2)
-                R.id.navigation_favorite -> viewPager.setCurrentItem(3)
-                R.id.navigation_profile -> viewPager.setCurrentItem(4)
+            when (item.itemId) {
+                R.id.navigation_home -> viewPager.currentItem = 0
+                R.id.navigation_search -> viewPager.currentItem = 1
+                R.id.navigation_upload -> viewPager.currentItem = 2
+                R.id.navigation_favorite -> viewPager.currentItem = 3
+                R.id.navigation_profile -> viewPager.currentItem = 4
             }
             true
         }
@@ -46,30 +63,26 @@ class MainActivity : BaseActivity() {
             override fun onPageScrolled(
                 position: Int,
                 positionOffset: Float,
-                positionOffsetPixels: Int,
+                positionOffsetPixels: Int
             ) {
-
             }
 
             override fun onPageSelected(position: Int) {
                 index = position
-                bottomNavigationView.getMenu().getItem(index).setChecked(true)
+                bottomNavigationView.menu.getItem(index).isChecked = true
             }
 
-            override fun onPageScrollStateChanged(state: Int) {
-
-            }
+            override fun onPageScrollStateChanged(state: Int) {}
 
         })
-
-        // Home and Upload Fragments are global for communication purpose
+        //home and upload fragments are global for communication purpose
 
         homeFragment = HomeFragment()
         uploadFragment = UploadFragment()
-        setupViewPager(viewPager)
+        setUpViewPager(viewPager)
     }
 
-    private fun setupViewPager(viewPager: ViewPager) {
+    private fun setUpViewPager(viewPager: ViewPager) {
         val adapter = ViewPagerAdapter(supportFragmentManager)
         adapter.addFragment(homeFragment)
         adapter.addFragment(SearchFragment())
@@ -77,5 +90,6 @@ class MainActivity : BaseActivity() {
         adapter.addFragment(FavoriteFragment())
         adapter.addFragment(ProfileFragment())
         viewPager.adapter = adapter
+
     }
 }
