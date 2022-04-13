@@ -6,11 +6,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android_instagram_clone.R
 import com.example.android_instagram_clone.adapter.ProfileAdapter
+import com.example.android_instagram_clone.managers.AuthManager
 import com.example.android_instagram_clone.model.Post
 import com.example.android_instagram_clone.utils.Logger
 import com.google.android.material.imageview.ShapeableImageView
@@ -37,6 +39,12 @@ class ProfileFragment : BaseFragment() {
     private fun initViews(view: View) {
         rv_profile = view.findViewById(R.id.rv_profile)
         rv_profile.layoutManager = GridLayoutManager(activity,2)
+
+        val iv_logout = view.findViewById<ImageView>(R.id.iv_profile)
+        iv_logout.setOnClickListener {
+            AuthManager.signOut()
+            callSigInActivity(requireActivity())
+        }
 
         val iv_profile = view.findViewById<ShapeableImageView>(R.id.iv_profiles)
         iv_profile.setOnClickListener {

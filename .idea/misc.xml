@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/drawable-v24/app_main_gradient.xml" value="0.19166666666666668" />
+        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/drawable-v24/edittext_rounded_corners.xml" value="0.18611111111111112" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/drawable-v24/view_rounded_corner.xml" value="0.19166666666666668" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/drawable/bottom_nav_color.xml" value="0.19166666666666668" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.19166666666666668" />
+        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/drawable/loading_frame.xml" value="0.1" />
+        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/drawable/shape_circle_orange_light.xml" value="0.1824074074074074" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/drawable/textview_rounded_corners.xml" value="0.15925925925925927" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/font-v26/custom_font.xml" value="0.20572916666666666" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/font/custom_font.xml" value="0.20572916666666666" />
@@ -14,6 +17,7 @@
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/activity_sign_in.xml" value="0.22" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/activity_sign_up.xml" value="0.17552083333333332" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/activity_splash.xml" value="0.14666666666666667" />
+        <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/custom_progress_dialog.xml" value="0.17552083333333332" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/edittext_rounded_corners.xml" value="0.17552083333333332" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/fragment_favorite.xml" value="0.17552083333333332" />
         <entry key="..\:/Android studio projects/Android_Instagram_Clone/app/src/main/res/layout/fragment_home.xml" value="0.12" />
